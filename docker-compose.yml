@@ -1,8 +1,7 @@
 services:
   todoapp:
-    image: todoapp
-    volumes:
-      - .:/django-assessment-stefan-cosma
+    command: python manage.py runserver 0.0.0.0:8000
+    image: django-todoapp:v2.0
     ports:
       - "8000:8000"
     
